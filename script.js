@@ -6,6 +6,14 @@ function pri
 }
 function reverseNumberFormat(num){
 	return Number(num.replace(/,/g,''));
+	
+		else if(this.id=="backspace"){
+			var output=reverseNumberFormat(getOutput()).toString();
+			if(output){//if output has a value
+				output= output.substr(0,output.length-1);
+				printOutput(output);
+			}
+		}
 }
 var operator = document.getElementsByClassName("operator");
 for(var i =0;i<operator.length;i++){
