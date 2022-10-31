@@ -16,6 +16,14 @@ body{
 }
 #history{
 	text-align: right;
+	
+		else if(this.id=="backspace"){
+			var output=reverseNumberFormat(getOutput()).toString();
+			if(output){//if output has a value
+				output= output.substr(0,output.length-1);
+				printOutput(output);
+			}
+		}
 	height: 20px;
 	margin: 0 20px;
 	padding-top: 20px;
